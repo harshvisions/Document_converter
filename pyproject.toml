@@ -1,1 +1,3 @@
+[project.scripts]
+app = "main.py:app"
 
