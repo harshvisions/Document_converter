@@ -1,2 +1,7 @@
+[project]
+name = "your-project-name"
+version = "0.1.0"
+description = "A brief description of your app"
+
 [project.scripts]
 app = "main:main_function_name"
