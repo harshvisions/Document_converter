@@ -1,7 +1,7 @@
 [project]
-name = "your-project-name"
+name = "Document_Converter"
 version = "0.1.0"
-description = "A brief description of your app"
+description = "Convert Documents are pdf to jpeg"
 
 [project.scripts]
 app = "main:main_function_name"
