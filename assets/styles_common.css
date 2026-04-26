@@ -1,0 +1,84 @@
+/* ===================== MAIN PAGE TOOL BOXES (CLICKABLE CARDS) ===================== */
+.tool-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 1200px){
+  .tool-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 800px){
+  .tool-grid{ grid-template-columns: 1fr; }
+}
+
+/* Entire card clickable */
+.tool-card-link{
+  text-decoration: none !important;
+  color: var(--text) !important;
+  display: block;
+}
+
+.tool-card{
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tool-card:hover{
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+  background: color-mix(in srgb, var(--card) 88%, var(--primary) 12%);
+}
+
+.tool-card.disabled{
+  opacity: .55;
+  pointer-events: none;
+}
+
+.tool-card-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+}
+
+.tool-title{
+  font-weight: 800;
+  font-size: 16px;
+  margin: 0;
+}
+
+.tool-desc{
+  margin: 10px 0 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.tool-badge{
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.06);
+  white-space: nowrap;
+}
+
+.tool-badge.ready{
+  border-color: rgba(22,163,74,.35);
+  background: rgba(22,163,74,.18);
+}
+
+.tool-badge.soon{
+  border-color: rgba(245,158,11,.35);
+  background: rgba(245,158,11,.18);
+}

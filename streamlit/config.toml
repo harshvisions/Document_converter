@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor = "#4F46E5"              # Indigo
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6F8FF"  # Soft indigo tint
+textColor = "#111827"                 # Neutral dark
+font = "sans serif"
