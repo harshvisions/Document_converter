@@ -1,2 +1,2 @@
-app = "main.py"
-
+[project.scripts]
+app = "main:main_function_name"
