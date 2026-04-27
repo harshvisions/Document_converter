@@ -135,7 +135,7 @@ if "theme" not in st.session_state:
 
 # Load CSS
 load_css(CSS_COMMON)
-load_css(CSS_DARK if st.session_state.theme == "Dark" else CSS_LIGHT)
+load_css(CSS_DARK if st.session_state.theme == "Light" else CSS_LIGHT)
 
 if "active_tool" not in st.session_state:
     st.session_state.active_tool = "home"
