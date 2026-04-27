@@ -1,4 +1,95 @@
 /* ===================== MAIN PAGE TOOL BOXES (CLICKABLE CARDS) ===================== */
+:root {
+    --bg: #ffffff;
+    --card-bg: #ffffff;
+    --text-main: #111111;
+    --text-muted: #555555;
+    --border-color: #e3e3e3;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --success: #16a34a;
+    --warning: #ca8a04;
+    --danger: #dc2626;
+}
+
+/* ============ TOOL CARD BORDER ============ */
+
+.tool-card {
+    border: 1.5px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--card-bg);
+    padding: 16px;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Tool icon border */
+.tool-card img {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 8px;
+    background: transparent;
+}
+/* Hover effect */
+.tool-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+``
+/* ============ SIDEBAR BASE ============ */
+[data-testid="stSidebar"] {
+    background-color: var(--bg) !important;
+    border-right: 1px solid var(--border-color);
+}
+
+[data-testid="stSidebar"] * {
+    color: var(--text-main) !important;
+}
+/* Remove top blank space */
+.main .block-container {
+    padding-top: 0 !important;
+}
+
+
+/* Buttons */
+.stButton > button {
+    background: var(--accent);
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+}
+
+.stButton > button:hover {
+    background: var(--accent-hover);
+}
+
+/* Inputs */
+input, textarea, select {
+    background: var(--card-bg) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+/* Labels */
+label {
+    color: var(--text-main) !important;
+}
+
+/* Tables */
+thead tr th {
+    background: var(--card-bg) !important;
+    color: var(--text-main) !important;
+}
+
+tbody tr td {
+    color: var(--text-main) !important;
+}
+
+/* Captions & help text */
+.stCaption, .stMarkdown small {
+    color: var(--text-muted) !important;
+}
+
 .tool-grid{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -82,3 +173,4 @@
   border-color: rgba(245,158,11,.35);
   background: rgba(245,158,11,.18);
 }
+
